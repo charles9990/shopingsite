@@ -58,6 +58,7 @@ html {
 }
 
 body {
+  font-family: var(--primary-font);
   background-color: var(--color-rose-50);
   color: var(--color-rose-900);
   line-height: 1.5;

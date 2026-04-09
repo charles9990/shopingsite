@@ -1,0 +1,36 @@
+.navigations{
+    border-bottom: 1px solid rgb(248, 223, 198);
+    padding: 1em 1.5em;
+    max-width: 1200px;
+    margin:  0 auto;
+}
+
+.navigations ul{
+   
+    gap: .2em;
+    margin-left: 6em;
+}
+.navigations ul li{
+    margin: 0 1.5em;
+}
+
+.btnDiv{
+    gap: 10px;
+}
+.btnDiv button{  
+    width: 35px;
+    padding: 5px 10px;
+    border-radius: 7px;
+    border: none;
+    overflow: hidden;
+    transition: all 200ms ease;
+}
+.btnDiv button:hover{
+    width: 100px;
+}
+.btnDiv button span{
+    margin: 0 12px;
+}
+.btnDiv button svg{
+    flex-shrink: 0;
+}

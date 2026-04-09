@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Prevents padding/border from increasing element width */
+}
+:root {
+  /* Brand Colors */
+  --primary-color: hsl(14, 86%, 42%);
+  --secondary-color: hsl(159, 69%, 38%);
+
+  /* Neutral / Rose Palette */
+  --color-rose-50: hsl(20, 50%, 98%);
+  --color-rose-100: hsl(13, 31%, 94%);
+  --color-rose-300: hsl(14, 25%, 72%);
+  --color-rose-400: hsl(7, 20%, 60%);
+  --color-rose-500: hsl(12, 20%, 44%);
+  --color-rose-900: hsl(14, 65%, 9%);
+
+  /* Semantic Mappings (Optional but recommended) */
+  --bg-body: var(--color-rose-50);
+  --text-main: var(--color-rose-900);
+  --text-muted: var(--color-rose-500);
+  --border-light: var(--color-rose-100);
+  --primary-font :"Red Hat Text", sans-serif;
+}
+
+
+/* =============== COLOR UTILITIES =========== */
+
+
+.text-primary { color: var(--primary-color); }
+.text-secondary { color: var(--secondary-color); }
+.text-rose-50 { color: var(--color-rose-50); }
+.text-rose-100 { color: var(--color-rose-100); }
+.text-rose-300 { color: var(--color-rose-300); }
+.text-rose-400 { color: var(--color-rose-400); }
+.text-rose-500 { color: var(--color-rose-500); }
+.text-rose-900 { color: var(--color-rose-900); }
+
+
+/* =============== BACKGROUND COLOR UTILITIES =========== */
+
+.bg-primary { background-color: var(--primary-color); }
+.bg-secondary { background-color: var(--secondary-color); }
+.bg-rose-50 { background-color: var(--color-rose-50); }
+.bg-rose-100 { background-color: var(--color-rose-100); }
+.bg-rose-300 { background-color: var(--color-rose-300); }
+.bg-rose-400 { background-color: var(--color-rose-400); }
+.bg-rose-500 { background-color: var(--color-rose-500); }
+.bg-rose-900 { background-color: var(--color-rose-900); }
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-rose-50);
+  color: var(--color-rose-900);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, 
+picture, 
+video, 
+canvas, 
+svg {
+  display: block;
+  max-width: 100%; /* Prevents images from overflowing their container */
+}
+
+input, 
+button, 
+textarea, 
+select {
+  font: inherit; /* Inherit font styles from parent instead of browser defaults */
+}
+
+ul, 
+ol {
+  list-style: none; /* Removes bullets/numbers (standard for UI lists) */
+}
+
+a {
+  text-decoration: none; /* Removes the default blue underline */
+  color: inherit;
+}
+
+
+/* ============ FONT WEIGHT UTILS */
+.fw-regular {
+  font-weight: 400;
+}
+
+.fw-semibold {
+  font-weight: 600;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+.ff-primary {font-family: var(--primary-font);}
+
+
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+
+/* Horizontal Alignment (Main Axis) */
+.jc-start { justify-content: flex-start; }
+.jc-end { justify-content: flex-end; }
+.jc-center { justify-content: center; }
+.jc-between { justify-content: space-between; } /* Great for "Order Total" row */
+
+/* Vertical Alignment (Cross Axis) */
+.ai-start { align-items: flex-start; }
+.ai-center { align-items: center; } /* Perfect for icons next to text */
+.ai-end { align-items: flex-end; }
